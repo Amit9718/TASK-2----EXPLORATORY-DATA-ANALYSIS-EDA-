@@ -1,0 +1,40 @@
+====================================================================
+  RETAIL SALES - EDA SUMMARY REPORT  (2023)
+====================================================================
+
+DATASET
+  1000 transactions | 11 features | 0 missing values
+  Period: 2023-01-01 to 2023-12-31
+
+REVENUE OVERVIEW
+  Total revenue    : $     468,674
+  Mean per order   : $      468.67
+  Median per order : $      145.15
+  Std deviation    : $    2,095.83
+  Skewness         : 23.78  (right-skewed due to outliers)
+
+KEY FINDINGS
+  1. Electronics is the top revenue category
+       $238,934 total - 269 orders
+  2. Furniture has the highest average order value
+       $1,408.46  (Furniture)
+  3. Online channel leads in average order value
+       Online $537.74  vs  In-Store $423.47
+  4. Discount positively correlates with satisfaction (r ~ 0.30)
+       Higher discounts -> happier customers
+  5. Delivery time: In-Store = 0 days, Online ~4 days, Wholesale ~7 days
+
+OUTLIERS
+  107 revenue outliers detected via IQR
+  Outlier revenue range: $1,010 to $59,943
+  These likely represent bulk/wholesale orders or data entry errors.
+  Normal transaction mean : $215.04
+  Outlier mean            : $2,585.45
+
+RECOMMENDATIONS
+  * Investigate outlier transactions - validate if bulk orders or errors.
+  * Wholesale channel has longest delivery times; consider logistics review.
+  * Groceries has the most orders but low avg. value - upsell opportunity.
+  * Discount strategy is working: higher discounts improve satisfaction.
+
+====================================================================
